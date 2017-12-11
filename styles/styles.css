@@ -1,0 +1,44 @@
+* {
+  margin: 0; }
+
+.style-component-container {
+  margin: 35px; }
+
+.style-component-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.style-component-heading h2 {
+  width: 80%; }
+
+.style-component-heading hr {
+  width: 80%; }
+
+#accordion {
+  display: grid;
+  margin: 40px 15px;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-auto-rows: 10% 90%;
+  grid-template-areas: "tab1 tab2 tab3 tab4" "accordionCard accordionCard accordionCard accordionCard"; }
+
+.accordion-tab {
+  text-align: center; }
+
+#tab-1 {
+  grid-area: tab1; }
+
+#tab-2 {
+  grid-area: tab2; }
+
+#tab-3 {
+  grid-area: tab3; }
+
+#tab-4 {
+  grid-area: tab4; }
+
+.accordion-article {
+  grid-area: accordionCard;
+  display: flex; }
+
+/*# sourceMappingURL=styles.css.map */
