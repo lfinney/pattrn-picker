@@ -38,6 +38,7 @@
   grid-area: tab4; }
 
 .accordion-article {
-  grid-area: accordionCard; }
+  grid-area: accordionCard;
+  display: flex; }
 
 /*# sourceMappingURL=styles.css.map */
