@@ -189,7 +189,8 @@ button:hover {
 
   .accordion-tab {
     text-align: left;
-    border: solid 1px #ffffff;
+    border-left: none;
+    border-right: none;
     padding: 20px;
     height: 45px;
     line-height: 45px;
