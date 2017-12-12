@@ -182,7 +182,7 @@ button:hover {
 
   #accordion {
     margin-top: 150px;
-    border: solid 1px #d1d2d3; }
+    border: solid 5px #d1d2d3; }
 
   .active-tab {
     border-top-width: 5px; }
