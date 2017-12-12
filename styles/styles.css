@@ -12,16 +12,20 @@ header {
   font-weight: 600; }
 
 header h1 {
+  margin: 15px 0 15px 75px;
   text-transform: uppercase;
-  margin-left: 75px; }
+  font-size: 2em; }
 
 header span {
   color: #34d1d1; }
 
+.title-break {
+  display: none; }
+
 h2, h3 {
   font-weight: 600; }
 
-h3 {
+header h3 {
   margin-right: 75px; }
 
 .flex-center-align {
@@ -65,7 +69,8 @@ h3 {
   background-color: #f2f2f2;
   height: 55px;
   line-height: 60px;
-  font-size: 1.1em; }
+  font-size: 1.1em;
+  color: #666666; }
 
 .accordion-tab:hover {
   background-color: #666666;
@@ -95,9 +100,12 @@ h3 {
 
 .accordion-article {
   grid-area: accordionCard;
-  display: flex;
   border: solid 1px #d1d2d3;
-  border-top: none; }
+  border-top: none;
+  display: none; }
+
+.active-article {
+  display: flex; }
 
 .accordion-article img {
   height: 350px;
@@ -125,5 +133,92 @@ button {
   height: 65px;
   font-size: 1.5em;
   border-radius: 0; }
+
+button:hover {
+  color: #2f2235;
+  background-color: #d1d2d3; }
+
+.embedded-code {
+  margin-top: 50px;
+  width: 85%; }
+
+.hidden, .mobile-button {
+  display: none; }
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column; }
+
+  header h1 {
+    margin: 10px 0;
+    font-size: 2.2em; }
+
+  .title-break {
+    display: inline-block;
+    width: 25%;
+    border-color: #3f3244;
+    border-top: none; }
+
+  header h3 {
+    margin: 10px 0 15px 0; }
+
+  .style-component-container {
+    margin: 25px; }
+
+  #accordion, .style-component-heading {
+    display: flex;
+    flex-direction: column;
+    margin: 0; }
+
+  .style-component-heading h2 {
+    margin: 10px 0;
+    text-align: center;
+    width: 100%;
+    font-size: 1.8em; }
+
+  .style-component-heading hr {
+    width: 25%;
+    margin: 0; }
+
+  #accordion {
+    margin-top: 150px;
+    border: solid 1px #d1d2d3; }
+
+  .active-tab {
+    border-top-width: 5px; }
+
+  .accordion-tab {
+    text-align: left;
+    border: solid 1px #ffffff;
+    padding: 20px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 1.8em;
+    display: flex;
+    justify-content: space-between; }
+
+  .mobile-button {
+    display: inline-block;
+    font-size: 1.2em; }
+
+  .accordion-article {
+    flex-direction: column; }
+
+  .text-content {
+    padding: 0; }
+
+  .active-article {
+    display: flex;
+    border-bottom: none; }
+
+  .accordion-article img {
+    height: 200px;
+    width: 100%;
+    margin: 0;
+    border-left: none;
+    border-right: none; }
+
+  .view-button {
+    margin-top: 50px; } }
 
 /*# sourceMappingURL=styles.css.map */

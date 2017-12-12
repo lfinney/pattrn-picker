@@ -2,14 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=.8">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
-    <title></title>
+    <title>Pattrn Party</title>
   </head>
   <body>
     <header>
       <h1>Pattrn <span>Party</span></h1>
+      <hr class="title-break">
       <h3>Luke Finney</h3>
     </header>
     <main>
@@ -19,11 +21,9 @@
           <hr>
         </div>
         <section id="accordion">
-          <div id="tab-1" class="accordion-tab active-tab">Tab 1</div>
-          <div id="tab-2" class="accordion-tab">Tab 2</div>
-          <div id="tab-3" class="accordion-tab">Tab 3</div>
-          <div id="tab-4" class="accordion-tab">Tab 4</div>
-          <article id="accordion-1" class="accordion-article">
+          <div id="tab-1" class="accordion-tab active-tab">Tab 1<span class="mobile-button">&#65293;
+</span></div>
+          <article id="accordion-1" class="accordion-article active-article">
             <img src="assets/gizmo-smiling.jpg" alt="Gizmo the corgi smiling" class="accordion-image">
             <div class="text-content">
               <h3 class="accordion-section-heading">Corgi Ipsum</h3>
@@ -36,6 +36,7 @@
               </p>
             </div>
           </article>
+          <div id="tab-2" class="accordion-tab">Tab 2<span class="mobile-button">+</span></div>
           <article id="accordion-2" class="accordion-article">
             <img src="assets/gizmo-listening.jpg" alt="Gizmo the corgi listening" class="accordion-image">
             <div class="text-content">
@@ -49,6 +50,7 @@
               </p>
             </div>
           </article>
+          <div id="tab-3" class="accordion-tab">Tab 3<span class="mobile-button">+</span></div>
           <article id="accordion-3" class="accordion-article">
             <img src="assets/gizmo-playing.jpg" alt="Gizmo the corgi playing" class="accordion-image">
             <div class="text-content">
@@ -62,6 +64,7 @@
               </p>
             </div>
           </article>
+          <div id="tab-4" class="accordion-tab">Tab 4<span class="mobile-button">+</span></div>
           <article id="accordion-4" class="accordion-article">
             <img src="assets/gizmo-cute.jpg" alt="Gizmo the corgi being cute" class="accordion-image">
             <div class="text-content">
@@ -77,11 +80,14 @@
           </article>
         </section>
         <button class="view-button">View Code</button>
+        <div class="embedded-code hidden">
+          <p data-height="265" data-theme-id="dark" data-slug-hash="JMjjaP" data-default-tab="html" data-user="lfinney" data-embed-version="2" data-pen-title="Accordion Tabs" class="codepen">See the Pen <a href="https://codepen.io/lfinney/pen/JMjjaP/">Accordion Tabs</a> by Lucas Finney (<a href="https://codepen.io/lfinney">@lfinney</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+          <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+        </div>
       </div>
     </main>
 
   </body>
-  <script type="text/javascript" src="scripts.js">
-
-  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts.js"></script>
 </html>
