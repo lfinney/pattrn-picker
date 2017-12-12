@@ -1,29 +1,75 @@
 * {
-  margin: 0; }
+  margin: 0;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif; }
 
-.style-component-container {
-  margin: 35px; }
-
-.style-component-heading {
+header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  background-color: #2f2235;
+  color: #f2f2f2;
+  font-weight: 600; }
+
+header h1 {
+  text-transform: uppercase;
+  margin-left: 75px; }
+
+header span {
+  color: #34d1d1; }
+
+h2, h3 {
+  font-weight: 600; }
+
+h3 {
+  margin-right: 75px; }
+
+.flex-center-align {
+  display: flex;
   align-items: center; }
 
+.style-component-container {
+  margin: 35px;
+  flex-direction: column; }
+
+.style-component-container h2 {
+  font-weight: 300;
+  text-transform: uppercase; }
+
+.style-component-heading {
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 25px; }
+
 .style-component-heading h2 {
-  width: 80%; }
+  width: 175px;
+  font-size: 1.2em;
+  display: block;
+  margin-left: 40px; }
 
 .style-component-heading hr {
-  width: 80%; }
+  width: 80%;
+  margin-right: 40px; }
 
 #accordion {
   display: grid;
-  margin: 40px 15px;
+  margin: 75px;
   grid-template-columns: 25% 25% 25% 25%;
   grid-auto-rows: 10% 90%;
   grid-template-areas: "tab1 tab2 tab3 tab4" "accordionCard accordionCard accordionCard accordionCard"; }
 
 .accordion-tab {
-  text-align: center; }
+  text-align: center;
+  border: solid 1px #ffffff;
+  border-bottom: solid 1px #d1d2d3;
+  background-color: #f2f2f2;
+  height: 55px;
+  line-height: 60px;
+  font-size: 1.1em; }
+
+.accordion-tab:hover {
+  background-color: #666666;
+  color: #f2f2f2; }
 
 #tab-1 {
   grid-area: tab1; }
@@ -37,8 +83,47 @@
 #tab-4 {
   grid-area: tab4; }
 
+.active-tab {
+  border: solid 1px #d1d2d3;
+  border-bottom: none;
+  background-color: #ffffff;
+  font-weight: 600; }
+
+.active-tab:hover {
+  background-color: #ffffff;
+  color: #000000; }
+
 .accordion-article {
   grid-area: accordionCard;
-  display: flex; }
+  display: flex;
+  border: solid 1px #d1d2d3;
+  border-top: none; }
+
+.accordion-article img {
+  height: 350px;
+  width: 300px;
+  margin: 20px;
+  border: solid 1px #d1d2d3;
+  border-width: 2px; }
+
+.text-content {
+  margin: 20px;
+  padding: 20px 0; }
+
+.accordion-section-heading {
+  margin-bottom: 10px; }
+
+.text-content hr, .accordion-text {
+  margin-bottom: 25px; }
+
+button {
+  background-color: #2f2235;
+  color: #ffffff;
+  width: 450px;
+  text-transform: uppercase;
+  border: none;
+  height: 65px;
+  font-size: 1.5em;
+  border-radius: 0; }
 
 /*# sourceMappingURL=styles.css.map */
