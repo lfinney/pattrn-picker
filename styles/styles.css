@@ -107,12 +107,25 @@ header h3 {
 .active-article {
   display: flex; }
 
-.accordion-article img {
+.accordion-image {
   height: 350px;
   width: 300px;
   margin: 20px;
   border: solid 1px #d1d2d3;
-  border-width: 2px; }
+  border-width: 2px;
+  flex-shrink: 0; }
+
+#smiling {
+  background-image: url(../assets/gizmo-smiling.jpg); }
+
+#listening {
+  background-image: url(../assets/gizmo-listening.jpg); }
+
+#playing {
+  background-image: url(../assets/gizmo-playing.jpg); }
+
+#cute {
+  background-image: url(../assets/gizmo-cute.jpg); }
 
 .text-content {
   margin: 20px;
@@ -124,7 +137,7 @@ header h3 {
 .text-content hr, .accordion-text {
   margin-bottom: 25px; }
 
-button {
+.view-button {
   background-color: #2f2235;
   color: #ffffff;
   width: 450px;
@@ -134,7 +147,7 @@ button {
   font-size: 1.5em;
   border-radius: 0; }
 
-button:hover {
+.view-button:hover {
   color: #2f2235;
   background-color: #d1d2d3; }
 
@@ -182,10 +195,7 @@ button:hover {
 
   #accordion {
     margin-top: 150px;
-    border: solid 3px #d1d2d3; }
-
-  .active-tab {
-    border-top-width: 5px; }
+    border: solid 1px #d1d2d3; }
 
   .accordion-tab {
     text-align: left;
@@ -205,6 +215,16 @@ button:hover {
   .accordion-article {
     flex-direction: column; }
 
+  .accordion-image {
+    margin: auto;
+    height: 200px;
+    width: 100%;
+    border-left: none;
+    border-right: none;
+    background-position: 50% 42%;
+    background-repeat: no-repeat;
+    background-size: cover; }
+
   .text-content {
     padding: 0; }
 
@@ -212,14 +232,8 @@ button:hover {
     display: flex;
     border-bottom: none; }
 
-  .accordion-article img {
-    height: 200px;
-    width: 100%;
-    margin: 0;
-    border-left: none;
-    border-right: none; }
-
   .view-button {
-    margin-top: 50px; } }
+    width: 100%;
+    margin: 50px 20px 0 20px; } }
 
 /*# sourceMappingURL=styles.css.map */
