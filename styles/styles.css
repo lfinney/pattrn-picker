@@ -52,8 +52,9 @@ header h3 {
   margin-left: 40px; }
 
 .style-component-heading hr {
-  width: 80%;
-  margin-right: 40px; }
+  width: 75%;
+  margin-right: 40px;
+  border-top: none; }
 
 #accordion {
   display: grid;
