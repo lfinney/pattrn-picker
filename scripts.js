@@ -7,6 +7,16 @@ $('.accordion-tab').on('click', (event) => {
   $(event.target).next('.accordion-article').addClass('active-article');
 });
 
-$('.view-button').on('click', (event) => {
-  $(event.target).next('.embedded-code').toggleClass('hidden');
+$('.view-content').on('click', (event) => {
+  $(event.target).next('.embedded-content').toggleClass('hidden');
+});
+
+$(window).resize(() => {
+  const viewportWidth = $(window).width();
+  if (viewportWidth <= 800) {
+    $('nav.embedded-content').addClass('hidden');
+  }
+  if (viewportWidth > 800) {
+    $('nav.embedded-content').removeClass('hidden');
+  }
 });
